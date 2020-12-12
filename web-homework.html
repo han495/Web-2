@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>乐督督</title>
+	<style>
+		body{
+			background-color: black;
+		}
+		.clear:after {
+    		content: '';
+    		display: block;
+    		height: 0;
+    		clear: both;
+		}
+		.all{
+			width: 1400px;
+			height: 1500px;
+			position: relative;
+			background-color: black;
+		}
+		.one{
+			width:1100px;
+			height:500px;
+			padding-top: 10px;
+		}
+		.logo{
+			width:10px;
+			height:5px;
+			top:0px;
+			left:110px;
+			position: relative;
+		}
+		.title{
+			font-size: 30px;
+			font-weight: 800;
+			color: orange;
+			padding-left:380px;
+			top:40px;
+			position: relative;
+			
+		}
+		form{
+			position: relative;
+			left: 890px;
+			top: 0px;
+		}
+		.search{
+			float: left;
+			width: 200px;
+			padding: 9px;
+			border: 1px solid;
+		}
+		.fa-search{
+			width: 20px;
+			height: 20px;
+			position: relative;
+			left: 863px;
+			top: 8px;
+		}
+		.button{
+			float: left;
+			width: 35px;
+			height: 35px;
+			background:black;
+			background-size: 100% auto;
+		}
+		.banner{
+			width: 1080px;
+			height: 337px;
+			position: absolute;
+			top: 150px;
+			left: 80px;
+		}
+		.list{
+			width: 1080px;
+			height: 50px;
+			background-color: orange;
+			padding-top: 10px;
+			position: absolute;
+			left: 80px;
+			top: 100px;
+		}
+		.list ul li a{
+			display: inline-block;
+			width: 124px;
+			float: left;
+			border-left: 1px black dotted;
+			border-right: 1px black dotted;
+			text-align: center;
+			color: white;
+			background-color: black;
+			font-size: 15px;
+		}
+		.list li{
+			display: inline-block;
+			width: 124px;
+			height: 25px;
+			text-align: center;
+			float: left;
+			position: relative;
+			left: 160px;
+			top: 0px;
+			background-color: black;
+		}
+		.list a:hover{
+			border-bottom: 2px orange solid;
+			color:orange;
+			font-size: 20px;
+		}
+		.denglu{
+			width:300px;
+			height:250px;
+			background-color: white;
+			opacity: 0.6;
+			top:180px;
+			left:740px;
+			position: absolute;
+
+		}
+		.gg p{
+			color:black;
+			font-size: 20px;
+			padding-left: 15px;
+			width:66px;
+			height:30px;
+			text-align: center;
+			font-weight: 600;
+		}
+		.hh1{
+			position: relative;
+			left: 834px;
+			height:40px;
+			top:112px;
+			width:100px;
+		}
+		.hh2{
+			position: relative;
+			left: 834px;
+			height:40px;
+			top:133px;
+			width: 100px;
+		}
+
+		.button1{
+			width:200px;
+			height:40px;
+			background-color: orange;
+			top:150px;
+			right:100px;
+			position: relative;
+			font-size: 20px;
+		}
+		.button2{
+			width:200px;
+			height:40px;
+			background-color: silver;
+			top:160px;
+			right:100px;
+			position: relative;
+			font-size: 20px;
+		}
+		
+		.two{
+			width:1080px;
+			height:500px;
+			top:500px;
+			left:80px;
+			position: absolute;
+			float: left;
+		}
+		.aa {
+			border: 1px;
+			width: 350px;
+			height: 500px;
+			padding: 4px;
+			float: left;
+			position: relative;
+			border-left: 1px silver dotted;
+			border-right: 1px silver dotted;
+		}
+		.picture{
+			width:350px;
+			height:300px;
+			padding: 0px;
+		}
+		.word{
+			width:350px;
+			height:300px;
+			padding-top: 10px;
+			color: white;
+
+		}
+		.yin{
+			width: 350px;
+			height: 40px;
+			background-color: black;
+			opacity: 0.4;
+			font-size: 18px;
+			position: absolute;
+			bottom: 0px;
+			padding-bottom: 30px;
+			color: white;
+			top:230px;
+		}
+		.bb{
+			font-size: 25px;
+			text-align: center;
+		}
+		.three{
+			width: 1400px;
+			height: 400px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			left: 0;
+			top:2220px;
+		}
+		.ledudu{
+			font-size:50px;
+			font-family:Microsoft YaHei;
+			font-weight:bold;
+			color:yellow;
+			position: absolute;
+			left: 80px;
+			top: 100px;
+			
+		}
+		.explain{
+			font-size: 20px;
+			color: white;
+			position: absolute;
+			left: 80px;
+			top: 180px;
+			
+		}
+		.app a{
+			display: block;
+			width: 110px;
+			height: 32px;
+			padding-top: 5px;
+			font-size: 20px;
+			position: absolute;
+			left: 80px;
+			top: 230px;
+			text-align: center;
+			color: yellow;
+			border:2px yellow solid;
+			
+		}
+		ul{
+			list-style-type:none;
+		}
+		.cc{
+			width:550px;
+			height: 300px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			right: 150px;
+			top: 0;
+		}
+		.dd{
+			width: 1300px;
+			height: 100px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.ee{
+			text-align: center;
+			color:white;
+			font-size: 15px;
+
+		}
+		.ff{
+			font-size: 25px;
+			color: silver;
+			text-align: center;
+		}
+		.ff:hover{
+			border-bottom: 2px white solid;
+			font-size: 30px;
+		}
+		.logo2{
+			height:100px;
+			width:200px;
+			top:30px;
+			left:70px;
+			position: absolute;
+			border:rgb(60,60,60);
+		}
+		.ff a:link{
+			text-decoration: none;
+		}
+		.ff a:hover{
+			color:white;
+		}
+		.four{
+			width: 1100px;
+			height: 1170px;
+			position: absolute;
+			left: 70px;
+			top:1020px;
+			border: 2px pink dotted;
+		}
+		.jieshao{
+			color:yellow;
+			font-size: 26px;
+			position: absolute;
+			top:0px;
+			left: 25px;
+		}
+		.yiduiyi{
+			background-color: grey;
+			left:0px;
+			top:80px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi1{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii1{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.duoduiyi{
+			background-color: grey;
+			left:0px;
+			top:350px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi2{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.ii2{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.duoren{
+			background-color: grey;
+			left:0px;
+			top:620px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi3{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii3{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.yunzixi{
+			background-color: grey;
+			left:0px;
+			top:890px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi4{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii4{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+
+		#zhuce{
+			background-color: #CCC;
+			height: 500px;
+			width: 500px;
+			position: absolute;
+			top:60px;
+			left: 370px;
+			opacity: 0.85;
+			border-style: solid;
+			border-color: orange;
+		}
+		#truename{
+			position: relative;
+			top:50px;
+			left: 50px;
+			font-size: 15px;
+			font-weight:730; 
+		}
+		#yonghuming{
+			position: relative;
+			top:70px;
+			left: 50px;
+			font-size: 15px;
+			font-weight:730;
+		}
+		#mima1{
+			position: relative;
+			top:90px;
+			left: 50px;
+			font-size: 15px;
+			font-weight:730;
+		}
+		#mima2{
+			position: relative;
+			top:110px;
+			left: 50px;
+			font-size: 15px;
+			font-weight:730;
+		}
+		.text{
+			position: absolute;
+			width: 200px
+			height: 200px;
+			top: 10px;
+			left: 100px;
+
+		}
+		#truenamea{
+			position: absolute;
+			top:53px;
+			left: 30px;
+			font-size: 15px;
+			height: 20px;
+			width: 300px;
+		}
+		#yonghuminga{
+			position: absolute;
+			top:105px;
+			left: 30px;
+			font-size: 15px;
+			height: 20px;
+			width: 300px;
+		}
+		#mima1a{
+			position: absolute;
+			top:160px;
+			left: 30px;
+			font-size: 15px;
+			height: 20px;
+			width: 300px;
+		}
+		#mima2a{
+			position: absolute;
+			top:215px;
+			left: 30px;
+			font-size: 15px;
+			height: 20px;
+			width: 300px;
+		}
+		#zhucea{
+			position: absolute;
+			height: 40px;
+			width: 200px;
+			top:320px;
+			left: 50px;
+			color: black;
+			background-color: orange;
+			font-size: 20px;
+			font-weight: 500px;
+		}
+		.app a:hover{
+			color:orange;
+		}
+		#hxj{
+			position: absolute;
+			height: 300px;
+			width: 700px;
+			top:180px;
+			left: 300px;
+		}
+		#time{
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			top:180px;
+			left: 300px;
+			background-color: black;
+		}
+		#timer{
+			font-size: 25px;
+			position: relative;
+			top:0px;
+			left: 15px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="one">
+			<div class="logo">
+				<img src="web大作业\logo.png">
+			</div>
+			<div class="title">
+				乐督督
+			</div>
+			<form>
+				<input type="text" name="search" class="search">
+				<input type="button" name="submit" class="button">
+			</form>
+			<img src="web大作业\search.jpg" class="fa-search">
+			<div class="list">
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">模式介绍</a></li>
+					<li><a href="">计划圈子</a></li>
+					<li><a href="">监督学习</a></li>
+					<li><a href="">个人中心</a></li>
+				</ul>
+			</div>
+			<img src="web大作业\banner.jpg" class="banner" name="banner" onmouseover="over1()" onmouseout="out1()">
+			<div class="denglu">
+				<div class="gg">
+					<p>用户名:</p>
+				</div>
+				<div class="gg">	
+					<p>密码:</p>
+				</div>
+			</div>
+			<form class="hh1">
+				<input type="text" name="username" value="" id="username"/>
+			</form>
+			<form class="hh2">
+				<input type="password" name="password" value="" id="password"/>
+			</form>
+			<form class="hh3">
+				<input type="button" name="submit" value="登录" class="button1" onclick="denglu()">
+			</form>
+			<form class="hh4">
+				<input type="button" name="submit" value="注册" class="button2" onclick="zhuce1()">
+			</form>
+			
+		</div>
+		<div class="two">
+			<div class="aa">
+				<div>
+					<img src="web大作业\study.jpg" name="study" onmouseover="over2()" onmouseout="out2()" class="picture">
+				</div>
+				<div class="yin">
+					<p class="bb">监督学习</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">一对一模式</a></p>
+					<p class="ff"><a href="">多对一模式</a></p>
+					<p class="ff"><a href="">多人模式</a></p>
+				</div>
+			</div>
+			<div class="aa">
+				<div>
+					<img src="web大作业\plan.jpg" name="plan" onmouseover="over3()" onmouseout="out3()" class="picture">
+				</div>
+				<div class="yin">
+					<p class="bb">制定计划</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">英语四六级</a></p>
+					<p class="ff"><a href="">运动打卡</a></p>
+					<p class="ff"><a href="">自定义计划</a></p>
+				</div>
+			</div>
+			<div class="aa">
+				<div>
+					<img src="web大作业\zixi.jpg" name="zixi" onmouseover="over4()" onmouseout="out4()" class="picture">
+				</div>
+				<div class="yin">
+					<p class="bb">云自习</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">平台大自习</a></p>
+					<p class="ff"><a href="">好友自习</a></p>
+					<p class="ff"><a href="">单人自习</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="four">
+			<div class="jieshao">
+				<p>模式介绍</p>
+			</div>
+			<div class="yiduiyi">
+				<div class="moshi1">
+					<img src="web大作业\一对一.png" >
+				</div>
+				<div class="wenzi1">
+					<p class="ii1" id="wenzi1" onmouseover="changecolor1()" onmouseout="changeover1()">一对一模式：每位线上用户均可以在设定目标后，寻找与自己目标相近的好友或陌生人组成监督小组，每日打卡以完成既定目标，并由一位监督人来评判。</p>
+				</div>
+			</div>
+			<div class="duoduiyi">
+				<div class="moshi2">
+					<img src="web大作业\多对一.png">
+				</div>
+				<div class="wenzi2">
+					<p class="ii2" id="wenzi2" onmouseover="changecolor2()" onmouseout="changeover2()">多对一模式：每位线上用户设定目标后，放置督督币作为底金，由多人围观监督，每位用户都相当于一个监督者，如果这位用户完成目标，则平台会给予相应的督督币奖励，如果没有完成任务，则会有平台抽取 20%，剩下由监督者平分。</p>
+				</div>
+			</div>
+			<div class="duoren">
+				<div class="moshi3">
+					<img src="web大作业\多人.png">
+				</div>
+				<div class="wenzi3">
+					<p class="ii3" id="wenzi3" onmouseover="changecolor3()" onmouseout="changeover3()">多人模式：多人互助学习将以共同目标为主要分组要求（例如考研、四六级等），推荐以四人模式（两男两女）为主，四人模式经实验表明为最优化学习团队模式，团队中每个人均不会被忽略，同时在个体间关系中，由于异性效应的影响，每个人的活动和学习更能激发学习的愉悦感和动力。</p>
+				</div>
+			</div>
+			<div class="yunzixi">
+				<div class="moshi4">
+					<img src="web大作业\云自习.png">
+				</div>
+				<div class="wenzi4">
+					<p class="ii4" id="wenzi4" onmouseover="changecolor4()" onmouseout="changeover4()">本平台设有云自习室，用户可选择花费督督币自定房间与线上好友共同自习，或加入平台大自习室进行自习。</p>
+				</div>
+			</div>
+		</div>
+		<div class="three">
+			<div class="cc">
+				<ul>
+					<li class="ledudu">乐督督</li>
+					<li class="explain">致力于打造线上学习平台，满足当代学生需求</li>
+					<li class="app"><a href="" onclick="xiazai()">下载APP</a></li>	
+				</ul>
+			</div>	
+			<div class="logo2">
+				<img src="web大作业\logo2.png">
+			</div>
+			<div class="dd">
+				<p class="ee">| 版权归乐督督开发小组所有 |</p>
+				<p class="ee">| 最终解释权归乐督督开发小组所有 |</p>
+			</div>
+
+	</div>
+	<div id="zhuce">
+		<p id="truename">*真实姓名：</p>
+		<P id="yonghuming">*用户名：</P>
+		<p id="mima1">*设置密码：</p>
+		<p id="mima2">*确认密码：</p>
+		<form class="text">
+			<input type="text" name="name" value="" id="truenamea"/>
+			<input type="text" name="usrename" value="" id="yonghuminga"/>
+			<input type="password" name="password" value="" id="mima1a"/>
+			<input type="password" name="password" value="" id="mima2a"/>
+			<input type="button" name="submit" value="点击注册" id="zhucea" onclick="onzhuce()">
+		</form>
+		
+	</div>
+	<div>
+		<img src="web大作业/漂浮.png" id="hxj">
+	</div>
+	<div id="time">
+		<p id="timer">3s</p>
+	</div>
+</body>
+<script>
+	var button1 = document.getElementsByTagName("button1");
+	var button2 = document.getElementsByTagName("button2");
+	var username = document.getElementById("username");
+	var password = document.getElementById("password");
+	var zhuce = document.getElementById("zhuce");
+	var truenamea = document.getElementById("truenamea");
+	var yonghuminga = document.getElementById("yonghuminga");
+	var mima1a = document.getElementById("mima1a");
+	var mima2a = document.getElementById("mima2a");
+	var banner = document.getElementsByTagName("banner");
+	var time = document.getElementById("time");
+	var timer = document.getElementById("timer");
+
+	zhuce.style.display="none";
+	function denglu() {
+		if(username.value != ""){
+			if(password.value != ""){
+				alert("登录成功！");
+			}
+			else{
+				alert("请输入密码！");
+			}
+		}
+		else{
+			alert("请输入用户名！");
+		}
+	}
+	function zhuce1() {
+		zhuce.style.display="block";
+		truenamea.value="";
+		yonghuminga.value="";
+		mima1a.value="";
+		mima2a.value="";
+	}
+	function onzhuce() {
+		if(truenamea.value && yonghuminga.value && mima1a.value && mima2a.value){
+			if(mima1a.value == mima2a.value){
+				alert("注册成功！");
+				zhuce.style.display="none";
+			}
+			else{
+				alert("两次密码不相同！");
+			}
+		}
+		else{
+			alert("信息不完整！");
+		}
+	}
+	function xiazai() {
+		alert("正在下载……");
+	}
+	function over1() {
+		document.banner.src="web大作业/banner2.jpg";
+	}
+	function out1() {
+		document.banner.src="web大作业/banner.jpg";
+	}
+	function over2() {
+		document.study.src="web大作业/study2.jpg";
+	}
+	function out2() {
+		document.study.src="web大作业/study.jpg";
+	}
+	function over3() {
+		document.plan.src="web大作业/plan2.jpg";
+	}
+	function out3() {
+		document.plan.src="web大作业/plan.jpg";
+	}
+	function over4() {
+		document.zixi.src="web大作业/zixi2.jpg";
+	}
+	function out4() {
+		document.zixi.src="web大作业/zixi.jpg";
+	}
+	function changecolor1() {
+		document.getElementById("wenzi1").style.color="#C9C";
+	}
+	function changeover1() {
+		document.getElementById("wenzi1").style.color="grey";
+	}
+	function changecolor2() {
+		document.getElementById("wenzi2").style.color="#9C9";
+	}
+	function changeover2() {
+		document.getElementById("wenzi2").style.color="grey";
+	}
+	function changecolor3() {
+		document.getElementById("wenzi3").style.color="skyblue";
+	}
+	function changeover3() {
+		document.getElementById("wenzi3").style.color="grey";
+	}
+	function changecolor4() {
+		document.getElementById("wenzi4").style.color="pink";
+	}
+	function changeover4() {
+		document.getElementById("wenzi4").style.color="grey";
+	}
+	function daojishi() {
+		var num=2;
+        var setIntervalId = setInterval(function() {
+            var str1 =num + "s";
+            if(num == 0) {
+                clearInterval(setIntervalId);
+                hxj.style.display="none";
+                time.style.display="none";
+                num=2;
+            }
+            timer.innerHTML = str1;
+            num=num-1;
+        },1000);
+    }
+    daojishi();
+</script>
+</html>
